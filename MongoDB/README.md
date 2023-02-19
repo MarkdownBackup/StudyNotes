@@ -2,6 +2,8 @@
 
 MongoDB 学习笔记
 
+<!-- HACK: Github上无法显示目录树 -->
+
 [TOC]
 
 ## Install
@@ -28,3 +30,32 @@ cd '.\1.Import&Export\'
 mongoexport -d test -c products -o pro.json
 nvim pro.json
 ```
+
+## 基本操作
+
+- 查看所有数据库
+
+  ```bash
+  show dbs
+  ```
+
+- 创建数据库
+
+  ```bash
+  use example
+  ```
+
+  > NOTE：如果里面没有数据，并不会真正的创建。在图形化管理工具中并不会显示该数据库
+
+- 查看当前使用的数据库
+
+  ```bash
+  db
+  ```
+
+- 插入数据
+
+  ```bash
+  doc = {"title":"A","content":"第一个数据"}
+  db.some.insertOne(doc)
+  ```
