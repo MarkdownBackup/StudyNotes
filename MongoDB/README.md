@@ -59,3 +59,30 @@ nvim pro.json
   doc = {"title":"A","content":"第一个数据"}
   db.some.insertOne(doc)
   ```
+
+## Collections 简介与基础操作
+
+- 切换到 test 数据库
+
+  ```bash
+  use test
+  ```
+
+- 清屏
+
+  ```bash
+  cls
+  ```
+
+- 显示当前数据库中的 Collections
+
+  ```bash
+  show collections;
+  ```
+
+- 查询所有数据
+
+  ```bash
+  db.products.find();
+  ```
+
